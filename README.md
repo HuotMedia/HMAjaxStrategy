@@ -40,3 +40,39 @@ Coming Soon...
         // ...
     );
     ```
+	
+Post Installation
+-----------------
+
+Simply create an ajax call to something in your application.
+
+### Example
+
+	```JavaScript
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery('#myModal').on('show',function(){
+			});
+		});
+	</script>
+	```
+	
+	```Php
+	//Add this to the layout.phtml file in the Skeleton Application
+	<a href="<?php $this->basePath(); ?>/application" class="btn" data-toggle="modal" data-target=".modal">Login</a>
+	<div class="modal hide fade">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Modal header</h3>
+	  </div>
+	  <div class="modal-body">
+		<p>One fine body…</p>
+	  </div>
+	  <div class="modal-footer">
+		<a href="#" class="btn">Close</a>
+		<a href="#" class="btn btn-primary">Save changes</a>
+	  </div>
+	</div>
+	```
+	
+You should notice that the menu and footer of the them are not rendered with the application. Disable the module to see the difference in how it is rendered. 
