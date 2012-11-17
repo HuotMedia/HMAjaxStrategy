@@ -7,8 +7,7 @@ return array(
     ),
     'view_manager' => array(
         'strategies'   => array(
-            //'AjaxStrategy',
-        	'ViewJsonStrategy',
+            'AjaxStrategy',
         ),
     ),
 );
