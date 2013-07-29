@@ -24,7 +24,13 @@ Installation
 
 #### With composer
 
-Coming Soon...
+add this line to your require array. (watch the ",")
+
+	"require": {
+		...
+		"HuotMedia/HMAjaxStrategy": "*"
+		}
+
 
 #### Post installation
 
@@ -66,7 +72,7 @@ Simply create an ajax call to something in your application.
 		<h3>Modal header</h3>
 	  </div>
 	  <div class="modal-body">
-		<p>One fine body…</p>
+		<p>One fine bodyï¿½</p>
 	  </div>
 	  <div class="modal-footer">
 		<a href="#" class="btn">Close</a>
